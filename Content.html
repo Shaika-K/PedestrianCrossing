@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    video { display: block; }
+    video#bgvid {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -webkit-transform: translateX(-50%)         translateY(-50%);
+        -moz-transform: translateX(-50%)      translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background: url(1.jpg) no-repeat;
+        background-size: cover;
+}
+    .banner{
+    width: 63%;
+    height:14%;      
+    clear:both;
+    float: right;
+    margin-top: 1%;
+    margin-right: 6%;    
+    }
+    .title{ 
+    display:inline-block;
+    padding-top:0px;
+    margin:0px;
+    font-family: Verdana;
+    font-size: 240%;
+    text-align: center;
+    font-weight: 300; 
+    color: rgba(166, 8, 0, 0.8);
+    }
+    .nav img{
+    display: inline-block;    
+    max-height:140px;
+    width: auto;
+    height: auto;   
+    float: right;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    }       
+    .body{
+    width: 95%;
+    height:50%;
+    background:#f1f1f1;
+    opacity:0.75;
+    clear:both;
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.15);
+    padding:10px;
+    }
+    .body:hover{
+    opacity:1;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.55);
+    }
+    .header h2{
+    text-align: center;
+    font-family: Agency FB;
+    font-size: 270%;
+    color: #00591B;
+    }
+    .paragraphs{
+    font-family: corbel;
+    font-size: 170%;
+    color: #794500;
+    }
+    .diagram img{
+    display: block;
+    margin:0px auto;
+    max-height:440px;
+    width: auto;
+    height: auto;  
+    }
+    .footer {
+    width:100%;
+    display: inline-block; 
+    text-align: center;    
+    float: right;
+    margin-right: 1.5%; 
+    padding:0px;
+    margin-top: 0px;
+    margin-bottom: 2%;
+    }
+    .footer #footNote{
+    font-family: Century Gothic;
+    font-size: 130%;
+    color: rgba(241, 241, 241, 0.8);
+    margin:0px;
+    padding:0px;
+    }
+    .footer #links{     /*style="font-family:Century Gothic; color: #f1f1f1;"*/
+    font-family: Century Gothic;
+    padding: 10px;
+    color: #f1f1f1;
+    font-size:150%;
+    }
+    .footer #links:hover{
+    color:#FF281D;
+    padding 10px;
+    }
+</style>
+    <title>Signalised Crossing - Content</title>
+</head>
+<body>
+<video autoplay loop poster="1.jpg" id="bgvid">
+<source src="content.mp4" type="video/mp4">
+</video>
+<!--[if lt IE 9]>
+<script>
+document.createElement('video');
+</script>
+<![endif]-->
+<!-- making a video background reference: http://demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video -->
+    <!-- BANNER -->
+    <div class="banner">
+    <div class="title">
+    <h1> SIGNALISED PEDESTRIAN CROSSING</h1>
+    </div>
+    <div class="nav"> 
+        <a href="Gallery.html"><img id="i3" src="buttonTop.png" onmouseover="this.src='buttonGallery.png'" onmouseout="this.src='buttonTop.png'"></a>
+        <a href="Content.html"><img id="i2" src="buttonTop.png" onmouseover="this.src='buttonContent.png'" onmouseout="this.src='buttonTop.png'"></a>        
+        <a href="Homepage.html"><img id="i1" src="buttonTop.png" onmouseover="this.src='buttonHome.png'" onmouseout="this.src='buttonTop.png'"></a>
+    </div>    
+    <!-- BODY -->
+    <div class="body">    
+    <div class="header">
+    <h2>About Signalised Crossing</h2>
+    </div>
+    <div class="paragraphs">
+        <p>Signalised pedestrians lights work similar to traffic signals. But in addition to relying on timers to signal the transitions of traffic, pedestrian lights also rely on the time the button is pressed to signal a pedestrian is waiting to cross the road.</p>
+        <p>Signalised crossings depend on the place, lane, what type of vehicles use that particular intersection and the traffic light timers.</p>
+        <p>The crossing turn is associated with the vehicle lane parallel to it. In most cases, when the parallel lane is allowed to drive, the crossing lights will also signal the same. Vehicles are to give way to pedestrians if they are turning into the road the pedestrians are crossing.</p>
+        <p>After pressing the button, the lights will turn red on both sides of the road and will wait for the corresponding traffic light to meet the requirements for crossing (either red or green).</p>
+        <p>When the required traffic lights are signalled on, the green light will appear to tell pedestrian that they can cross. This green light lasts for a designated amount to time depending on the traffic lights and circumstances of the road. The green light is then followed by a blinking red light signalling pedestrians to finish crossing and not to start either. It then turns off until the button is pressed again.</p>
+        <p>A slow beeping sound is also provided in most crossing, and speeds up the constancy when the green light is on. This is beneficial for the visually impaired pedestrians who require a different sensor to signal the crossing.</p>
+        <aside class="diagram">
+        <img src="1.jpg" alt="diagram of the crossing at Salamance Rd intersection, Wellington">
+    </aside>
+        <p>As said by the name, pedestrian crossings are used by pedestrians (people who need to cross the road). The signalised crossing functions if the button is pressed from the opposite side of the road. Thus, though the crossing aim to be useable by everyone there may be some restriction for pedestrian with disability. However, other pedestrians and passer byers are expected to assist in these cases. </p>
+        </div>
+    </div>      
+    <!-- FOOTER -->
+    <div class="footer">
+        <div id="footNote">For further information about Pedestrian Crossings, visit here:</div>
+        <a id="links" href="https://www.nzta.govt.nz/resources/pedestrian-planning-guide/" >Pedestrian Crossing Design</a>
+        <a id="links" href="https://at.govt.nz/cycling-walking/pedestrian-safety/pedestrian-crossings/" >Crossings in New Zealand</a>
+        <a id="links" href="http://wellington.govt.nz/your-council/projects/green-woman-pedestrain-traffic-lanterns">Kate Sheppard Pedestrian Crossing Project</a>
+        <div id="footNote">(C) Shaika Khan 2015</div>    
+    </div>
+</body>
+</html>
